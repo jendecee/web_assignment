@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peje Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38843893d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@600&family=PT+Sans&family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <div class="mobile-nav-icon">☰</div>
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Category 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="categories.html">Fiction</a>
+                      <a href="categories.html">Non-Fiction</a>
+                      <a href="categories.html">Children's Books</a>
+                      <a href="categories.html">Reference Books</a>
+                      <a href="categories.html">Textbooks</a>
+                    </div>
+                </div> 
+                <a href="#">Blog</a>
+                <a href="#">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="right-navigation">
+                <form action="processing.php" method="get" enctype="text/plain">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" id="search" name="search_bar" placeholder="Search book...">
+                </form>
+                <a href="#"> <i class="fa-solid fa-bag-shopping"></i> </a>
+                <div id="vl"></div>
+                <a href="#">Sign In</a>
+            </div>
+        </nav>
+        <!--Navigation Bar-->
+        <!--Main Header Section-->
+        <div id="banner">
+            <div id="headline">
+                <h1>Find Your Next Book</h1>
+                <p>The bookstore that reads you while you read them
+                    <br>We live to serve book lovers!
+                </p>
+                <br>
+                <a href="categories.html" id="button-1">Explore Now</a>
+            </div>
+            <div id="book_sample">
+                <div class="sample">
+                    <a href="bookdetails.html"><img src="img/sample1.jpeg" alt="Liberation Day"></a>
+                    <a href="bookdetails.html"><br>Liberation Day</a>
+                    <p>George Saunders</p>
+                </div>
+                <div class="sample two">
+                    <a href="bookdetails.html">Demon Copperhead</a>
+                    <p>Barbara Kingsolver</p>
+                    <a href="bookdetails.html"><img src="img/sample2.jpeg" alt="Demon Copperhead"></a>
+                </div>
+                <div class="sample">
+                    <a href="bookdetails.html"><img src="img/sample3.jpeg" alt="Demon Copperhead"></a>
+                    <a href="bookdetails.html"><br>Darling</a>
+                    <p>India Knight</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main Header Section-->
+    <!--Main Section-->
+    <main>
+    <!--Bestseller Section-->
+    <section class="bestseller">
+        <div class="title">
+            <a href="categories.html"><h1>Bestsellers</h1></a>
+        </div>
+        <div class="top">
+            <div class="top-book">
+                <img class="number" src="img/1.png" alt="number 1">
+                <a href="bookdetails.html"><img class="pic" src="img/top1.jpeg" alt="Top 1"></a>
+            </div>
+            <div class="top-book">
+                <img class="number" src="img/2.png" alt="number 1">
+                <a href="bookdetails.html"><img class="pic" src="img/top2.jpeg" alt="Top 2"></a>
+            </div>
+            <div class="top-book">
+                <img class="number" src="img/3.png" alt="number 1">
+                <a href="bookdetails.html"><img class="pic" src="img/top3.jpeg" alt="Top 3"></a>
+            </div>
+            <div class="top-book">
+                <img class="number" src="img/4.png" alt="number 1">
+                <a href="bookdetails.html"><img class="pic" src="img/top4.jpeg" alt="Top 4"></a>
+            </div>
+        </div>
+    </section>
+    <!--Bestseller Section-->
+    <!--Event Section-->
+    <section id="event">
+        <img src="img/event.png" alt="Event Place">
+        <div id="box-text">
+            <h3>Online Book Fairs 2023</h3>
+            <p>Interested in books, please come here we have a huge variety of books for you</p>
+            <button id="button-2" role="button"><a href="#">Create Account</a></button>
+        </div>
+    </section>
+    <!--Event Section-->
+    <!--Category 1-->
+    <section>
+    <div class="container">
+    <div class="title">
+        <a href="categories.html"><h1>Fiction Books</h1></a>
+        <a href="categories.html">See all</a>
+    </div>
+    <div class="categories fiction">
+        <div class="book">
+            <a href="bookdetails.html"><img src="img/fiction1.jpg" alt="The Hidden Hindu"></a>
+            <p><strong>The Hidden Hindu</strong></p>
+            <p>Akshat Gupta</p>
+            <button id="button-3" role="button"><a href="#"> <i class="fa-solid fa-bag-shopping"></i></a></button>
+        </div>
+        <div class="book">
+            <a href="bookdetails.html"><img src="img/fiction2.jpeg" alt="A House With Good Bones"></a>
+            <p><strong>A House With Good Bones</strong></p>
+            <p>T.Kingfisher</p>
+            <button id="button-3" role="button"><a href="#"> <i class="fa-solid fa-bag-shopping"></i></a></button>
+        </div>
+        <div class="book">
+            <a href="bookdetails.html"><img src="img/fiction3.jpeg" alt="The Book Of Life"></a>
+            <p><strong>The Book Of Life</strong></p>
+            <p>Deborah Harkness</p>
+            <button id="button-3" role="button"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></button>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!--Category 1-->
+    <!--Category 2-->
+    <section>
+    <div class="container">
+        <div class="title">
+            <a href="categories.html"><h1>Non-Fiction Books</h1></a>
+            <a href="categories.html">See all</a>
+        </div>
+        <div class="categories fiction">
+            <div class="book">
+                <a href="bookdetails.html"><img src="img/nonfiction1.jpeg" alt="Spare"></a>
+                <p><strong>Spare</strong></p>
+                <p>Prince Harry</p>
+                <button id="button-3" role="button"><a href="#"> <i class="fa-solid fa-bag-shopping"></i></a></button>
+            </div>
+            <div class="book">
+                <a href="bookdetails.html"><img src="img/nonfiction2.jpeg" alt="Poverty, by America"></a>
+                <p><strong>Poverty, by America</strong></p>
+                <p>Matthew Desmond</p>
+                <button id="button-3" role="button"><a href="#"> <i class="fa-solid fa-bag-shopping"></i></a></button>
+            </div>
+            <div class="book">
+                <a href="bookdetails.html"><img src="img/nonfiction3.jpeg" alt="Reckoning"></a>
+                <p><strong>Reckoning</strong></p>
+                <p>V</p>
+                <button id="button-3" role="button"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Category 2-->
+    <!--Category 3-->
+    <section>
+        <div class="container">
+            <div class="title">
+                <a href="categories.html"><h1>Children's Books</h1></a>
+                <a href="categories.html">See all</a>
+            </div>
+            <div class="categories fiction">
+                <div class="book">
+                    <a href="bookdetails.html"><img src="img/children1.png" alt="Wonder"></a>
+                    <p><strong>Wonder</strong></p>
+                    <p>R.J Palacio</p>
+                    <button id="button-3" role="button"><a href="#"> <i class="fa-solid fa-bag-shopping"></i></a></button>
+                </div>
+                <div class="book">
+                    <a href="bookdetails.html"><img src="img/children2.jpeg" alt="Madeline"></a>
+                    <p><strong>Madeline</strong></p>
+                    <p>Ludwig Bemelmans</p>
+                    <button id="button-3" role="button"><a href="#"> <i class="fa-solid fa-bag-shopping"></i></a></button>
+                </div>
+                <div class="book">
+                    <a href="bookdetails.html"><img src="img/children3.jpeg" alt="Reckoning"></a>
+                    <p><strong>Oh, the Places you'll go</strong></p>
+                    <p>Dr. Seuss</p>
+                    <button id="button-3" role="button"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Category 3-->
+    </main>
+    <!--Main Section-->
+    <!--Footer Area-->
+    <footer>
+        <img src="img/logo.png" alt="Logo">
+        <div class="nav-footer">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a> 
+        </div>
+        <div class="nav-footer">
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="media">
+            <p><strong>Read With Me</strong></p><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bfcnpktwuq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        
+        </div>
+    </footer>
+    <!--Footer Area-->
+
+</body>
+</html>
+

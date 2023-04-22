@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peje Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38843893d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@600&family=PT+Sans&family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">    <!--Main Header Section-->
+</head>
+<body>
+<!--Main Header Section-->
+    <header>
+        <!--Navigation Bar-->
+        <div class="mobile-nav-icon">☰</div>
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Category 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="categories.html">Fiction</a>
+                      <a href="categories.html">Non-Fiction</a>
+                      <a href="categories.html">Children's Books</a>
+                      <a href="categories.html">Reference Books</a>
+                      <a href="categories.html">Textbooks</a>
+                    </div>
+                </div> 
+                <a href="#">Blog</a>
+                <a href="#">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="right-navigation">
+                <form action="processing.php" method="get" enctype="text/plain">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" id="search" name="search_bar" placeholder="Search book...">
+                </form>
+                <a href="#"> <i class="fa-solid fa-bag-shopping"></i> </a>
+                <div id="vl"></div>
+                <a href="#">Sign In</a>
+            </div>
+        </nav>
+        <!--Navigation Bar-->
+            <!--Breadcrumb-->
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="categories.html">Fiction</a></li>
+                <li>Death of a Salesman</li>
+            </ul>
+        <!--Breadcrumb-->
+    
+    </header>
+    <!--Main Header Section-->
+    <!--Main Section-->
+    <main>
+        <div class="container bookdetails">
+            <div class="wrapper">
+                <div class = "product-imgs">
+                    <div class = "img-display">
+                      <div class = "img-showcase">
+                        <img src = "img/fiction1.jpg" alt = "book image">
+                        <img src = "img/bookdetails2.jpg" alt = "book image">
+                        <img src = "img/bookdetails3.jpg" alt = "book image">
+                        <img src = "img/bookdetails4.jpg" alt = "book image">
+                      </div>
+                    </div>
+                    <div class = "img-select">
+                      <div class = "img-item">
+                        <a href = "#" data-id = "1">
+                          <img src = "img/fiction1.jpg" alt = "book image">
+                        </a>
+                      </div>
+                      <div class = "img-item">
+                        <a href = "#" data-id = "2">
+                          <img src = "img/bookdetails2.jpg" alt = "book image">
+                        </a>
+                      </div>
+                      <div class = "img-item">
+                        <a href = "#" data-id = "3">
+                          <img src = "img/bookdetails3.jpg" alt = "book image">
+                        </a>
+                      </div>
+                      <div class = "img-item">
+                        <a href = "#" data-id = "4">
+                          <img src = "img/bookdetails4.jpg" alt = "book image">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="content">
+                        <p class="category"><a href="categories.html">Fiction</a></p>
+                        <h2>Death Of A Salesman</h2>
+                        <h3 class="author"><a href="#">Authur Miller</a></h3>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">$15</p>
+                        </div>
+                        <div id="purchase">
+                        <button class="add">
+                            <span class="fa fa-shopping-cart"></span>
+                            Add to Cart
+                        </button>
+                        <button class="buy">
+                            <span class="fa fa-shopping-cart"></span>
+                            Buy now
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Information Section-->
+        <div id="description">
+            <h1>Description</h1>
+            <p class="main-description">
+                <em>'For a salesman, there is no rock bottom to life. He don't put a bolt to a nut, he don't tell you the law or give you medicine. He's a man way out there in the blue, riding on a smile and a shoeshine.'</em>
+                <br>
+                Willy Loman has been a salesman for 34 years. At 60, he is cast aside, his usefulness now exhausted. With no future to dream about he must face the crushing disappointments of his past. He takes one final brave action, but is he heroic at last?, or a self-deluding fool?
+            </p>
+            <p>
+                117 pages, Hardcover
+                <br>
+                First published January 1, 1949
+            </p>
+            <table>
+                <tr>
+                    <td>Literary awards</td>
+                    <td>Pulitzer Prize for Drama (1949), New York Drama Critics' Circle Award for Best American Play (1949)</td>
+                </tr>
+                <tr>
+                    <td>Original title</td>
+                    <td>Death of a Salesman</td>
+                </tr>
+                <tr>
+                    <td>Setting</td>
+                    <td>New York City, New York (United States)</td>
+                </tr>
+                <tr>
+                    <td>Characters</td>
+                    <td>Willy Loman, Linda Loman, Happy Loman, Biff Loman, Ben Loman, Howard Wagner</td>
+                </tr>
+            </table>
+            <h2><strong>This edition</strong></h2>
+            <table>
+                <tr>
+                    <td>Format</td>
+                    <td>117 pages, Hardcover</td>
+                </tr>
+                <tr>
+                    <td>Published</td>
+                    <td>February 28, 1994 by Heinemann Library</td>
+                </tr>
+                <tr>
+                    <td>ISBN</td>
+                    <td>9780435233075 (ISBN10: 0435233076)</td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>English</td>
+                </tr>
+            </table>
+        </div>
+        <!--Information Section-->
+        <!--Rating Section-->
+        <section id="rate">
+            <h1>Rating & Reviews</h1>
+            <div id="rating">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <p>What do <em>you</em> think?</p>
+                <div class="review star">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>Rate this book</p>
+            </div>
+        </section>
+        <!--Rating Section-->
+        <section>
+            <div class="title">
+                <h1>Readers <em>also</em> enjoy</h1>
+            </div>
+            <div class="sub-categories romance">
+                <div class="card">
+                    <a href="bookdetails.html"><img src="img/romance1.jpeg" alt="Paradise"></a>
+                    <a href="bookdetails.html"><h1>Paradise</h1></a>
+                    <p class="price">$9</p>
+                    <p>Judith McNaught</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div class="card">
+                    <a href="bookdetails.html"><img src="img/romantic2.jpeg" alt="Red, White & Royal Blue"></a>
+                    <a href="bookdetails.html"><h1>Red, White & Royal Blue</h1></a>
+                    <p class="price">$13</p>
+                    <p>Casey McQuiston</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div class="card">
+                    <a href="bookdetails.html"><img src="img/romance3.jpeg" alt="Act Your Age, Eve Brown"></a>
+                    <a href="bookdetails.html"><h1>Act Your Age, Eve Brown</h1></a>
+                    <p class="price">$10</p>
+                    <p>Talia Hibbert</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div class="card">
+                    <a href="bookdetails.html"><img src="img/romantic4.jpeg" alt="The Notebook"></a>
+                    <a href="bookdetails.html"><h1>The Notebook</h1></a>
+                    <p class="price">$17</p>
+                    <p>Nicholas Sparks</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div class="card">
+                    <a href="bookdetails.html"><img src="img/romantic5.jpeg" alt="An Offer From a Gentlemen"></a>
+                    <a href="bookdetails.html"><h1>An Offer From a Gentlemen</h1></a>
+                    <p class="price">$15</p>
+                    <p>Julia Quinn</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--Main Section-->
+    <!--Footer Area-->
+    <footer>
+        <img src="img/logo.png" alt="Logo">
+        <div class="nav-footer">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a> 
+        </div>
+        <div class="nav-footer">
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="media">
+            <p><strong>Read With Me</strong></p><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bfcnpktwuq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        
+        </div>
+    </footer>
+    <!--Footer Area-->
+</body>
+</html>
